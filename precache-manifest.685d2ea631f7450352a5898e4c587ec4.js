@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/kovedev/static/css/main.8358e690.chunk.css"
   },
   {
-    "revision": "450989cfe744ea6f01b96d2df6688711",
+    "revision": "7d6cffc7371574bcefcdfcbaa887c5c6",
     "url": "/kovedev/index.html"
   }
 ];
