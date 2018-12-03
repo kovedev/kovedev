@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import './App.scss';
 
-import Home from './components/Home.js';
-import About from './components/About.js';
-import Contact from './components/Contact.js';
-import Error from './components/Error.js';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+import Error from './components/Error';
 import Navigation from './components/Navigation';
+import Topic from './components/Topic';
 
 class App extends Component {
 	render() {
@@ -15,8 +16,10 @@ class App extends Component {
 					<Navigation/>
 					<Switch>
 						<Route path='/kovedev/' component={Home} exact/>
-						<Route path='/kovedev/about' component={About} />
-						<Route path='/kovedev/contact' component={Contact} />
+						<Route path='/kovedev/about/' component={About} />
+						<Route path='/kovedev/contact/' component={Contact} />
+						<Route path='/kovedev/topic/' component={Topic} exact/>
+						<Route path='/kovedev/topic/:id' component={Topic} />
 						<Route component={Error}/>
 					</Switch>
 				</div>
