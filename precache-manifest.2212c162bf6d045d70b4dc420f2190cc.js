@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/kovedev/static/js/runtime~main.f4b9e26c.js"
   },
   {
-    "revision": "cfda1a16ebb12720f482",
-    "url": "/kovedev/static/js/main.cfda1a16.chunk.js"
+    "revision": "09bc031b93a3571e4837",
+    "url": "/kovedev/static/js/main.09bc031b.chunk.js"
   },
   {
     "revision": "d705bc7a70f6908e15d7",
     "url": "/kovedev/static/js/1.d705bc7a.chunk.js"
   },
   {
-    "revision": "cfda1a16ebb12720f482",
+    "revision": "09bc031b93a3571e4837",
     "url": "/kovedev/static/css/main.6c964661.chunk.css"
   },
   {
-    "revision": "3f2ad37e18f721213e4093cb4660f112",
+    "revision": "0e61b3be5aa7893b00be2acab5f7d157",
     "url": "/kovedev/index.html"
   }
 ];
