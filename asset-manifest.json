@@ -1,13 +1,13 @@
 {
   "main.css": "/kovedev/static/css/main.6c964661.chunk.css",
-  "main.js": "/kovedev/static/js/main.5bfab770.chunk.js",
-  "main.js.map": "/kovedev/static/js/main.5bfab770.chunk.js.map",
+  "main.js": "/kovedev/static/js/main.a018fcc5.chunk.js",
+  "main.js.map": "/kovedev/static/js/main.a018fcc5.chunk.js.map",
   "static/js/1.d705bc7a.chunk.js": "/kovedev/static/js/1.d705bc7a.chunk.js",
   "static/js/1.d705bc7a.chunk.js.map": "/kovedev/static/js/1.d705bc7a.chunk.js.map",
   "runtime~main.js": "/kovedev/static/js/runtime~main.f4b9e26c.js",
   "runtime~main.js.map": "/kovedev/static/js/runtime~main.f4b9e26c.js.map",
   "static/css/main.6c964661.chunk.css.map": "/kovedev/static/css/main.6c964661.chunk.css.map",
   "index.html": "/kovedev/index.html",
-  "precache-manifest.7f4010d5c241255b134621013e6c11b5.js": "/kovedev/precache-manifest.7f4010d5c241255b134621013e6c11b5.js",
+  "precache-manifest.ceceaf96fddac1a03402a490ee3b3245.js": "/kovedev/precache-manifest.ceceaf96fddac1a03402a490ee3b3245.js",
   "service-worker.js": "/kovedev/service-worker.js"
 }
