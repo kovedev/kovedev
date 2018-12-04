@@ -2,6 +2,16 @@
   font-family: 'Courier New', Courier, monospace;
   font-size: 1em;
   text-align: center;
+  .PageName {
+    padding: 0 0 1em 0;
+  }
+  .UserPass {
+    display: flex;
+    justify-content: center;
+    div {
+      padding: 0 0.5em 0 0.5em;
+    }
+  }
 }
 .NavBar {
   font-size: 1em;
