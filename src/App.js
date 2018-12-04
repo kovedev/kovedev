@@ -2,27 +2,36 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import './App.scss';
 
-import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
-import Error from './components/Error';
-import Navigation from './components/Navigation';
-import Topic from './components/Topic';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+import SignInPage from './components/SignIn/SignIn';
+import Error from './components/Error/Error';
+import Navigation from './components/Navigation/Navigation';
+import SignUpPage from './components/SignUp/SignUp';
+import PasswordForgetPage from './components/PasswordForget/PasswordForgot';
+import AccountPage from './components/Account/Account';
+import AdminPage from './components/Admin/Admin';
+
+import * as ROUTES from './constants/routes';
 
 class App extends Component {
 	render() {
 		return (
-				<div>
-					<Navigation/>
-					<Switch>
-						<Route path='/kovedev/' component={Home} exact/>
-						<Route path='/kovedev/about/' component={About} />
-						<Route path='/kovedev/contact/' component={Contact} />
-						<Route path='/kovedev/topic/' component={Topic} exact/>
-						<Route path='/kovedev/topic/:id' component={Topic} />
-						<Route component={Error}/>
-					</Switch>
-				</div>
+			<div>
+				<Navigation/>
+				<Switch>
+					<Route path={ROUTES.HOME} component={Home} exact/>
+					<Route path={ROUTES.ABOUT} component={About} />
+					<Route path={ROUTES.CONTACT} component={Contact} />
+					<Route path={ROUTES.SIGN_IN} component={SignInPage} />
+					<Route path={ROUTES.SIGN_UP} component={SignUpPage} />
+					<Route path={ROUTES.PASSWORD_FORGET} component={PasswordForgetPage} />
+					<Route path={ROUTES.ACCOUNT} component={AccountPage} />
+					<Route path={ROUTES.ADMIN} component={AdminPage} />
+					<Route component={Error}/>
+				</Switch>
+			</div>
 		);
 	}
 }
