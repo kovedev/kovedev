@@ -20,7 +20,7 @@ class Firebase {
 
   // *** Auth Api ***
 
-  doCreateUserWithEmailAndPassword = (email, password) => this.auth.createUserAndRetrieveDataWithEmailAndPassword(email, password);
+  doCreateUserWithEmailAndPassword = (email, password) => this.auth.createUserWithEmailAndPassword(email, password);
   
   doSignInUserWithEmailAndPassword = (email, password) => this.auth.signInWithEmailAndPassword(email, password);
   
