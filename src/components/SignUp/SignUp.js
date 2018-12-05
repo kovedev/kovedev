@@ -34,7 +34,7 @@ class SignUpFormBase extends Component {
 		const { username, email, passwordOne } = this.state;
 
     this.props.firebase
-      .doCreateUserWithEmailAndPassword(email, passwordOne)
+      .signInWithEmailAndPassword(email, passwordOne)
       .then(authUser => {
         this.setState({ ...INITIAL_STATE });
         this.props.history.push(ROUTES.HOME);
@@ -102,7 +102,7 @@ class SignUpFormBase extends Component {
   }
 }
 const SignUpLink = () => (
-  <div>
+  <div className="SignUpLink">
       Don't gave an account? <Link to={ROUTES.SIGN_UP}>Sign Up</Link>
   </div>
 );

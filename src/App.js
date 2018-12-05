@@ -14,12 +14,33 @@ import AccountPage from './components/Account/Account';
 import AdminPage from './components/Admin/Admin';
 
 import * as ROUTES from './constants/routes';
+import { withFirebase } from './components/Firebase';
 
 class App extends Component {
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			authUser: null,
+		}
+	}
+
+	componentDidMount(){
+		this.props.firebase.auth.onAuthStateChanged(authUser => {
+			authUser
+				? this.setState({ authUser })
+				: this.setState({ authUser: null });
+		});
+	}
+
+	componentWillUnmount() {
+		this.listener();
+	}
+
 	render() {
 		return (
 			<div>
-				<Navigation/>
+				<Navigation authUser={this.state.authUser} />
 				<Switch>
 					<Route path={ROUTES.HOME} component={Home} exact/>
 					<Route path={ROUTES.ABOUT} component={About} />
@@ -36,4 +57,4 @@ class App extends Component {
 	}
 }
 
-export default App;
+export default withFirebase(App);
