@@ -1,13 +1,13 @@
 {
-  "main.css": "/kovedev/static/css/main.46d69901.chunk.css",
-  "main.js": "/kovedev/static/js/main.2826a4db.chunk.js",
-  "main.js.map": "/kovedev/static/js/main.2826a4db.chunk.js.map",
-  "static/js/1.6e8acd25.chunk.js": "/kovedev/static/js/1.6e8acd25.chunk.js",
-  "static/js/1.6e8acd25.chunk.js.map": "/kovedev/static/js/1.6e8acd25.chunk.js.map",
+  "main.css": "/kovedev/static/css/main.2ca480f9.chunk.css",
+  "main.js": "/kovedev/static/js/main.086b082f.chunk.js",
+  "main.js.map": "/kovedev/static/js/main.086b082f.chunk.js.map",
+  "static/js/1.44c1118e.chunk.js": "/kovedev/static/js/1.44c1118e.chunk.js",
+  "static/js/1.44c1118e.chunk.js.map": "/kovedev/static/js/1.44c1118e.chunk.js.map",
   "runtime~main.js": "/kovedev/static/js/runtime~main.f4b9e26c.js",
   "runtime~main.js.map": "/kovedev/static/js/runtime~main.f4b9e26c.js.map",
-  "static/css/main.46d69901.chunk.css.map": "/kovedev/static/css/main.46d69901.chunk.css.map",
+  "static/css/main.2ca480f9.chunk.css.map": "/kovedev/static/css/main.2ca480f9.chunk.css.map",
   "index.html": "/kovedev/index.html",
-  "precache-manifest.347b769b2fd0f3195678191e97f0b054.js": "/kovedev/precache-manifest.347b769b2fd0f3195678191e97f0b054.js",
+  "precache-manifest.f2205288871ffdc0a8cfaa9c274af452.js": "/kovedev/precache-manifest.f2205288871ffdc0a8cfaa9c274af452.js",
   "service-worker.js": "/kovedev/service-worker.js"
 }
