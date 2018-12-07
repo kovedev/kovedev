@@ -43,7 +43,7 @@ class AdminPage extends Component {
       <div className="App">
         <div className="PageName">Admin Page</div>
         <div className="UserList">
-          <div>Registered users: </div>
+          <div className="Registers">Registered users: </div>
           {loading && <ul>Loading ...</ul>}
           <UserList users={users} />
         </div>
