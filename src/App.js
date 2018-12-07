@@ -9,8 +9,8 @@ import SignInPage from './components/SignIn/SignIn';
 import Error from './components/Error/Error';
 import Navigation from './components/Navigation/Navigation';
 import SignUpPage from './components/SignUp/SignUp';
-import PasswordForgetPage from './components/PasswordForget/PasswordForgot';
-import AccountPage from './components/Account/Account';
+import PasswordForgetPage from './components/PasswordForget';
+import AccountPage from './components/Account';
 import AdminPage from './components/Admin/Admin';
 
 import * as ROUTES from './constants/routes';
