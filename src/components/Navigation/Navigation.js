@@ -20,7 +20,8 @@ const NavigationAuth = () => (
     <NavLink to={ROUTES.HOME}>Home</NavLink>
     <NavLink to={ROUTES.ABOUT}>About</NavLink>
     <NavLink to={ROUTES.CONTACT}>Contact</NavLink>
-    {/* <NavLink to={ROUTES.ADMIN}>Admin</NavLink> */}
+    <NavLink to={ROUTES.ACCOUNT}>Account</NavLink>
+    <NavLink to={ROUTES.ADMIN}>Admin</NavLink>
     <SignOutButton />
   </div>
 );

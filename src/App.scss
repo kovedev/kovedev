@@ -44,6 +44,12 @@
   .SignUpLink {
     margin: 0.5em 0 0 0;
   }
+  .UserList {
+    ul {
+      padding: 0;
+      list-style-type: none;
+    }
+  }
 }
 .NavBar {
   font-size: 1em;
