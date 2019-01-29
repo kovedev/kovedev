@@ -4,13 +4,14 @@ import { compose } from 'recompose';
 
 import { withFirebase } from '../Firebase';
 import * as ROUTES from '../../constants/routes';
+import * as ROLES from '../../constants/roles';
 
 const SignUpPage = () => (
   <div className="App">
     <div className="PageName">
 			Sign Up
 		</div>
-			<SignUpForm />
+		<SignUpForm />
   </div>
 );
 
@@ -18,7 +19,8 @@ const INITIAL_STATE = {
   username: '',
   email: '',
   passwordOne: '',
-  passwordTwo: '',
+	passwordTwo: '',
+	isAdmin: false,
   error: null,
 };
 
@@ -31,7 +33,12 @@ class SignUpFormBase extends Component {
 
   onSubmit = event => {
 		// eslint-disable-next-line
-		const { username, email, passwordOne } = this.state;
+		const { username, email, passwordOne, isAdmin } = this.state;
+		const roles = [];
+
+		if (isAdmin){
+			roles.push(ROLES.ADMIN);
+		}
 
     this.props.firebase
       .doCreateUserWithEmailAndPassword(email, passwordOne)
@@ -41,7 +48,8 @@ class SignUpFormBase extends Component {
           .user(authUser.user.uid)
           .set({
             username,
-            email,
+						email,
+						roles
           });
 			})
 			.then(() => {
@@ -59,12 +67,17 @@ class SignUpFormBase extends Component {
     this.setState({[event.target.name]: event.target.value});
   };
 
+	onChangeCheckbox = event => {
+		this.setState({ [event.target.name]: event.target.checked });
+	}
+
   render() {
     const {
       username,
       email,
       passwordOne,
-      passwordTwo,
+			passwordTwo,
+			isAdmin,
       error,
     } = this.state;
 
@@ -104,6 +117,15 @@ class SignUpFormBase extends Component {
           type="password"
           placeholder="Confirm Password"
         />
+				<div>
+					Admin:
+					<input 
+						name="isAdmin"
+						type="checkbox"
+						checked={isAdmin}
+						onChange={this.onChangeCheckbox}
+					/>
+				</div>
         <button disabled={isInvalid} type="submit">Sign Up</button>
         {error && <div>{error.message}</div>}
       </form>
@@ -112,7 +134,7 @@ class SignUpFormBase extends Component {
 }
 const SignUpLink = () => (
   <div className="SignUpLink">
-      Don't gave an account? <Link to={ROUTES.SIGN_UP}>Sign Up</Link>
+		Don't have an account? <Link to={ROUTES.SIGN_UP}>Sign Up</Link>
   </div>
 );
 
